@@ -1,60 +1,206 @@
-# Notes CLI Tool
+# 🧠 Notes CLI Tool
 
-A powerful, keyboard-driven "Second Brain" CLI for taking, organizing, and finding notes directly from your terminal. Built with Python, Click, Rich, and SQLite.
+> A powerful, keyboard-driven **Second Brain** for taking, organizing, and retrieving notes directly from your terminal.
 
-## Features
+Built with **Python + Click + Rich + SQLite**
 
-- **Core Actions:** Add, list, view, edit, and delete notes.
-- **Organization:** Tag your notes and filter them rapidly.
-- **Mood Tracking:** Record your mood and see trends over time.
-- **Insights & Dashboard:** View analytical statistics (e.g. top words, top tags) and a daily dashboard.
-- **Future Messages:** Send notes to your future self that will automatically deliver on a specified date.
-- **Linking:** Link notes together to create a knowledge graph structure.
-- **Brain Dump Mode:** Enter a continuous stream of thoughts broken into distinct notes.
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![CLI](https://img.shields.io/badge/interface-CLI-black.svg)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20Mac-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## Installation
+---
 
-Ensure you have Python 3 installed. Clone this repository and install the dependencies:
+# 🎬 Demo
+
+![Notes CLI Demo](demo.gif)
 
 ```bash
-# Clone the repository
+notes add "Build startup idea" --tag ideas --mood creative
+notes list
+notes dashboard
+notes insights
+```
+
+---
+
+# ✨ Features
+
+## 🧩 Core Note Management
+
+* Add, list, view, edit, and delete notes
+* Fast keyboard-driven workflow
+* Instant CLI access
+
+## 🏷️ Organization
+
+* Tag your notes
+* Filter by tags
+* Rapid search
+* Structured knowledge system
+
+## 😊 Mood Tracking
+
+* Record mood with notes
+* Track productivity trends
+* Mood-based filtering
+
+## 📊 Insights & Dashboard
+
+* Daily dashboard
+* Top tags
+* Most used words
+* Productivity analytics
+
+## ⏳ Future Messages
+
+Send notes to your future self
+
+```bash
+notes send-future "Review annual goals" --date 2026-12-31
+```
+
+## 🔗 Knowledge Graph Linking
+
+Link notes together
+
+```bash
+notes link 1 2
+notes links 1
+```
+
+Create a **second brain style knowledge network**
+
+## 🧠 Brain Dump Mode
+
+Continuous thought capture
+
+```bash
+notes brain-dump --tag daily-thoughts
+```
+
+Perfect for:
+
+* journaling
+* idea capture
+* thinking sessions
+
+---
+
+# ⚡ Installation
+
+Ensure Python 3 is installed.
+
+```bash
 git clone https://github.com/Aarpit9106/Notes-CLI-Tool.git
 cd Notes-CLI-Tool
-
-# Install the package globally
 pip install -e .
 ```
 
-## Usage
+Now the `notes` command is available globally.
 
-Once installed, the `notes` command is available globally.
+---
 
-### Common Commands
+# 🚀 Usage
 
-* **Add a note:** `notes add "Buy milk" --tag groceries --mood focused`
-* **List notes:** `notes list`
-* **View a specific note:** `notes view 1`
-* **Edit a note:** `notes edit 1 --tag shopping`
-* **Delete a note:** `notes delete 1`
+## Basic Commands
 
-### Organization & Brain Dump
+Add note
 
-* **Search:** `notes search "milk"`
-* **Brain Dump:** `notes brain-dump --tag daily-thoughts`
-* **Mood Filter:** `notes mood focused`
-* **Link Notes:** `notes link 1 2`
-* **View Links:** `notes links 1`
+```bash
+notes add "Buy milk" --tag groceries --mood focused
+```
 
-### Advanced Features
+List notes
 
-* **Insights:** `notes insights`
-* **Dashboard:** `notes dashboard`
-* **Memory Replay:** `notes replay week`
-* **Send to Future:** `notes send-future "Review annual goals" --date 2026-12-31`
+```bash
+notes list
+```
 
-## Example Output
+View note
 
-### Dashboard
+```bash
+notes view 1
+```
+
+Edit note
+
+```bash
+notes edit 1 --tag shopping
+```
+
+Delete note
+
+```bash
+notes delete 1
+```
+
+---
+
+# 🔎 Organization Commands
+
+Search notes
+
+```bash
+notes search "milk"
+```
+
+Filter by mood
+
+```bash
+notes mood focused
+```
+
+Brain dump
+
+```bash
+notes brain-dump --tag thoughts
+```
+
+Link notes
+
+```bash
+notes link 1 2
+```
+
+View links
+
+```bash
+notes links 1
+```
+
+---
+
+# 📈 Advanced Features
+
+Insights
+
+```bash
+notes insights
+```
+
+Dashboard
+
+```bash
+notes dashboard
+```
+
+Memory replay
+
+```bash
+notes replay week
+```
+
+Send to future
+
+```bash
+notes send-future "Review annual goals" --date 2026-12-31
+```
+
+---
+
+# 📊 Example Output
+
 ```
 Daily Dashboard
 ╭───── Notes Today ─────╮ ╭────── Moods Today ──────╮ ╭── Top Tags Today ──╮
@@ -63,3 +209,76 @@ Daily Dashboard
 │                       │
 ╰───────────────────────╯
 ```
+
+---
+
+# 🏗️ Project Structure
+
+```
+Notes-CLI-Tool
+│
+├── notes/
+├── database/
+├── commands/
+├── utils/
+├── main.py
+├── setup.py
+└── README.md
+```
+
+---
+
+# 🎯 Use Cases
+
+* Personal knowledge management
+* Second brain system
+* Daily journaling
+* Developer scratchpad
+* Idea capture
+* Productivity tracking
+* CLI lovers
+* Minimalists
+
+---
+
+# 🗺️ Roadmap
+
+* [ ] Export notes to markdown
+* [ ] Cloud sync
+* [ ] AI summarization
+* [ ] Web UI
+* [ ] Mobile companion
+* [ ] Plugin system
+
+---
+
+# 👨‍💻 Author
+
+Built by **Aarpit Jethwa**
+GitHub: https://github.com/Aarpit9106
+
+---
+
+# ⭐ Support
+
+If you like this project:
+
+* Star the repo
+* Share with developers
+* Contribute features
+
+---
+
+# 🧠 Why this is different
+
+Unlike traditional note apps, this is:
+
+* keyboard-first
+* zero distraction
+* terminal-native
+* knowledge graph enabled
+* future messaging
+* mood tracking
+* analytics built-in
+
+Your **Second Brain inside terminal**
