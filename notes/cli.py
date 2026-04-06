@@ -4,6 +4,7 @@ from notes.commands.core import core
 from notes.commands.organize import organize
 from notes.commands.future import future, check_future_messages
 from notes.commands.insights import info
+from notes.commands.data import data
 
 @click.group()
 def cli():
@@ -34,6 +35,10 @@ cli.add_command(future.commands['send'], name="send-future")
 cli.add_command(info.commands['insights'], name="insights")
 cli.add_command(info.commands['replay'], name="replay")
 cli.add_command(info.commands['dashboard'], name="dashboard")
+
+# Add data commands (export and import)
+cli.add_command(data.commands['export'], name="export")
+cli.add_command(data.commands['import'], name="import")
 
 if __name__ == '__main__':
     cli()

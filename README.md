@@ -89,11 +89,13 @@ Perfect for:
 
 # ⚡ Installation
 
-Ensure Python 3 is installed.
+Ensure you have Python 3 installed. Clone this repository and install the dependencies:
 
 ```bash
 git clone https://github.com/Aarpit9106/Notes-CLI-Tool.git
 cd Notes-CLI-Tool
+
+# Install the package globally
 pip install -e .
 ```
 

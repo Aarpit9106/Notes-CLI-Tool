@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notes-cli"
+version = "0.1.0"
+description = "A powerful, keyboard-driven Second Brain CLI for taking, organizing, and finding notes."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "click>=8.1.7",
+    "rich>=13.7.0"
+]
+
+[project.scripts]
+notes = "notes.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["notes*"]
